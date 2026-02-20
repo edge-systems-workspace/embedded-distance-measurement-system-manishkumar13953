@@ -2,8 +2,8 @@
 /**
  * @file main.cpp
  * @brief Embedded Distance Measurement using Ultrasonic Sensor
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @author manish_kumar
+ * @date 2026-01-23
  *
  * @details
  * Measures distance using HC-SR04 ultrasonic sensor
