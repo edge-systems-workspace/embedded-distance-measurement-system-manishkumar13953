@@ -41,21 +41,27 @@ void setup() {
 
 void loop() {
 
-    // TODO 9:
-    // Set TRIG LOW for 2 microseconds
+    digitalWrite(trigPin, LOW);
 
-    // TODO 10:
-    // Send 10 microsecond pulse on TRIG
+    delayMicroseconds(2);
 
-    // TODO 11:
-    // Measure pulse duration on ECHO using pulseIn()
 
-    // TODO 12:
-    // Calculate distance in cm
 
-    // TODO 13:
-    // Print calculated distance
+    digitalWrite(trigPin, HIGH);
 
-    // TODO 14:
-    // Add delay (500ms)
+    delayMicroseconds(10);
+
+    digitalWrite(trigPin, LOW);
+
+     duration = pulseIn(echoPin, HIGH);
+
+     distance = duration * 0.034 / 2;
+
+    Serial.print("Distance: ");
+
+    Serial.print(distance);
+
+    Serial.println(" cm");
+
+    delay(500);
 }
