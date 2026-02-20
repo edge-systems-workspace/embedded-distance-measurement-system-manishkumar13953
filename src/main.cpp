@@ -10,16 +10,18 @@
  * and displays structured output via Serial Monitor.
  */
 
- // TODO 1:
+int trigPin = 9;
+
+
  // Define TRIG pin (Use pin 9)
 
- // TODO 2:
+int echoPin = 10;
  // Define ECHO pin (Use pin 10)
+long duration =0;
 
- // TODO 3:
  // Create variable to store duration
 
- // TODO 4:
+float distance =0;
  // Create variable to store calculated distance
 
 void setup() {
